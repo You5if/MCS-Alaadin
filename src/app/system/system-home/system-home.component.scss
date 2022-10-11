@@ -10,10 +10,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
-.image {
-  width: 480px;
-  height: 250px;
+// .image {
+//   width: 480px;
+//   height: 250px;
+// }
+
+.image2 {
+  margin-left: -320px;
+}
+.image3 {
+  margin-right: -320px;
+  margin-top: -85px;
+}
+.image4 {
+  margin-top: -100px;
 }
 
 .fade-in {
@@ -23,49 +35,156 @@
   -o-animation: fadeIn ease 2s;
   -ms-animation: fadeIn ease 2s;
 }
+.fade-in2 {
+  animation: showup ease 2s;
+  -webkit-animation: showup ease 2s;
+  -moz-animation: showup ease 2s;
+  -o-animation: showup ease 2s;
+  -ms-animation: showup ease 2s;
+  
+  
+ 
+}
 @keyframes fadeIn {
   0% {
     opacity: 0;
+    transform:scale(0.1);
   }
   100% {
     opacity: 1;
+    transform:scale(1.0);
   }
 }
 
 @-moz-keyframes fadeIn {
   0% {
     opacity: 0;
+    transform:scale(0.1);
   }
   100% {
     opacity: 1;
+    transform:scale(1.0);
   }
 }
 
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
+    transform:scale(0.1);
   }
   100% {
     opacity: 1;
+    transform:scale(1.0);
   }
 }
 
 @-o-keyframes fadeIn {
   0% {
     opacity: 0;
+    transform:scale(0.1);
   }
   100% {
     opacity: 1;
+    transform:scale(1.0);
   }
 }
 
 @-ms-keyframes fadeIn {
   0% {
     opacity: 0;
+    transform:scale(0.1);
+  }
+  100% {
+    opacity: 1;
+    transform:scale(1.0);
+  }
+}
+@keyframes showup {
+  0% {
+    opacity: 0;
   }
   100% {
     opacity: 1;
   }
+}
+
+@-moz-keyframes showup {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes showup {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes showup {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes showup {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadingEffect {
+  position:absolute;
+  top:0; bottom:0; right:0;
+  width:100%;
+  background:white;
+  -moz-animation: showHide 5s ease-in alternate infinite; /* Firefox */
+  -webkit-animation: showHide 5s ease-in alternate infinite; /* Safari and Chrome */
+  -ms-animation: showHide 5s ease-in alternate infinite; /* IE10 */
+  -o-animation: showHide 5s ease-in alternate infinite; /* Opera */
+  animation: showHide 5s ease-in alternate infinite;
+}
+
+@-webkit-keyframes showHideR { /* Chrome, Safari */
+  0% {width:100%}
+  40% {width:0%}
+  60% {width:0%;}
+  100% {width:100%;}
+}
+@-moz-keyframes showHideR { /* FF */
+  0% {width:100%}
+  40% {width:0%}
+  60% {width:0%;}
+  100% {width:100%;}
+}
+@-ms-keyframes showHideR { /* IE10 */
+  0% {width:100%}
+  40% {width:0%}
+  60% {width:0%;}
+  100% {width:100%;}
+}
+@-o-keyframes showHideR { /* Opera */
+  0% {width:100%}
+  40% {width:0%}
+  60% {width:0%;}
+  100% {width:100%;}
+}
+@keyframes showHideR {
+  0% {width:100%}
+  40% {width:0%}
+  60% {width:0%;}
+  100% {width:100%;}
 }
 
 .box {

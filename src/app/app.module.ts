@@ -228,108 +228,6 @@ import { StockMovementEntryComponent } from "./system/AnotherComponents/stockmov
 // import { IsDecimalDirectiveDirective } from './system/is-decimal-directive.directive';
 // import { ReportsComponent } from './system/reports/reports.component';
 import { FinancialComponent } from './system/reports/financial/financial.component';
-
-import { SchoolClassComponent } from './lmssystem/schoolclass/schoolclass.component';
-// //import { TimetableComponent } from './lmssystem/timetable/timetable.component';
-// //import { Time } from "./lmssystem/timetable/time-table-entry/time-table-entry.component";
-import { TeacherComponent } from "./lmssystem/teacher/teacher.component";
-import { TeacherEntryComponent } from "./lmssystem/teacher/teacher-entry/teacher-entry.component";
-import { SchoolGroupComponent } from "./lmssystem/schoolgroup/schoolgroup.component";
-
-
-
-import { SchoolYearComponent } from "./lmssystem/schoolyear/schoolyear.component";
-
-import { StudentAttendComponent } from "./lmssystem/studentattend/studentattend.component";
-import { StudSubjComponent } from "./lmssystem/studsubj/studsubj.component";
-
-import { TimetableComponent } from "./lmssystem/timetable/timetable.component";
-import { TimetableEntryComponent } from "./lmssystem/timetable/timetable-entry/timetable-entry.component";
-import { SchoolClassEntryComponent } from "./lmssystem/schoolclass/schoolclass-entry/schoolclass-entry.component";
-import { SchoolgroupEntryComponent } from "./lmssystem/schoolgroup/schoolgroup-entry/schoolgroup-entry.component";
-import { StudentAttendEntryComponent } from "./lmssystem/studentattend/studentattend-entry/studentattend-entry.component";
-import { StudSubjEntryComponent } from "./lmssystem/studsubj/studsubj-entry/studsubj-entry.component";
-import { TeacSubComponent } from "./lmssystem/teacsub/teacsub.component";
-import { TeacSubEntryComponent } from "./lmssystem/teacsub/teacsub-entry/teacsub-entry.component";
-import { SubjectOutlineComponent } from "./lmssystem/subjectoutline/subjectoutline.component";
-import { SubjectOutlineEntryComponent } from "./lmssystem/subjectoutline/subjectoutline-entry/subjectoutline-entry.component";
-// import { SubOutlineUnComponent } from "./lmssystem/suboutlineun/suboutlineun.component";
-// import { SubOutlineUnEntryComponent } from "./lmssystem/suboutlineun/suboutlineun-entry/suboutlineun-entry.component";
-import { SubjectTrackingComponent } from "./lmssystem/subjecttracking/subjecttracking.component";
-import { SubjectTrackingEntryComponent } from "./lmssystem/subjecttracking/subjecttracking-entry/subjecttracking-entry.component";
-// import { SubjectContentComponent } from "./lmssystem/subjectcontent/subjectcontent.component";
-// import { SubjectContentEntryComponent } from "./lmssystem/subjectcontent/subjectcontent-entry/subjectcontent-entry.component";
-import { SubjectHomeworkComponent } from "./lmssystem/subjecthomework/subjecthomework.component";
-import { SubjectHomeworkEntryComponent } from "./lmssystem/subjecthomework/subjecthomework-entry/subjecthomework-entry.component";
-import { SubjTestMarksComponent } from "./lmssystem/subjtestmarks/subjtestmarks.component";
-import { SubjTestMarksEntryComponent } from "./lmssystem/subjtestmarks/subjtestmarks-entry/subjtestmarks-entry.component";
-import { GroupStudentComponent } from "./lmssystem/groupstudent/groupstudent.component";
-import { GroupStudentEntryComponent } from "./lmssystem/groupstudent/groupstudent-entry/groupstudent-entry.component";
-import { ClassSubjectComponent } from "./lmssystem/classsubject/classsubject.component";
-
-import { HomeworkSubComponent } from "./lmssystem/homeworksub/homeworksub.component";
-import { HomeworkSubEntryComponent } from "./lmssystem/homeworksub/homeworksub-entry/homeworksub-entry.component";
-import { SubjTestComponent } from "./lmssystem/subjtest/subjtest.component";
-import { SubjTestEntryComponent } from "./lmssystem/subjtest/subjtest-entry/subjtest-entry.component";
-import { VehicleComponent } from "./lmssystem/vehicle/vehicle.component";
-import { VehicleEntryComponent } from "./lmssystem/vehicle/vehicle-entry/vehicle-entry.component";
-import { VehicleMileageComponent } from "./lmssystem/vehiclemileage/vehiclemileage.component";
-import { VehicleMileageEntryComponent } from "./lmssystem/vehiclemileage/vehiclemileage-entry/vehiclemileage-entry.component";
-import { VehRegComponent } from "./lmssystem/vehreg/vehreg.component";
-import { VehRegEntryComponent } from "./lmssystem/vehreg/vehreg-entry/vehreg-entry.component";
-import { DriverComponent } from "./lmssystem/driver/driver.component";
-import { DriverEntryComponent } from "./lmssystem/driver/driver-entry/driver-entry.component";
-import { VehicleOwnerComponent } from "./lmssystem/vehicleowner/vehicleowner.component";
-import { VehicleOwnerEntryComponent } from "./lmssystem/vehicleowner/vehicleowner-entry/vehicleowner-entry.component";
-import { VehicleDriverComponent } from "./lmssystem/vehicledriver/vehicledriver.component";
-import { VehicleDriverEntryComponent } from "./lmssystem/vehicledriver/vehicledriver-entry/vehicledriver-entry.component";
-import { TripShiftComponent } from "./lmssystem/tripshift/tripshift.component";
-import { TripShiftEntryComponent } from "./lmssystem/tripshift/tripshift-entry/tripshift-entry.component";
-// import { TripShiftDetailsComponent } from "./lmssystem/tripshiftdetails/tripshiftdetails.component";
-import { TripExecComponent } from "./lmssystem/tripexec/tripexec.component";
-// import { TripExecDetailsComponent } from "./lmssystem/tripexecdetails/tripexecdetails.component";
-// import { VehicleFuelComponent } from "./lmssystem/vehiclefuel/vehiclefuel.component";
-// import { VehMainComponent } from "./lmssystem/vehmain/vehmain.component";
-// import { VehMainDetailsComponent } from "./lmssystem/vehmaindetails/vehmaindetails.component";
-// import { TripShiftDetailsEntryComponent } from "./lmssystem/tripshiftdetails/tripshiftdetails-entry/tripshiftdetails-entry.component";
-import { TripExecEntryComponent } from "./lmssystem/tripexec/tripexec-entry/tripexec-entry.component";
-// import { TripExecDetailsEntryComponent } from "./lmssystem/tripexecdetails/tripexecdetails-entry/tripexecdetails-entry.component";
-// import { VehicleFuelEntryComponent } from "./lmssystem/vehiclefuel/vehiclefuel-entry/vehiclefuel-entry.component";
-// import { VehMainEntryComponent } from "./lmssystem/vehmain/vehmain-entry/vehmain-entry.component";
-// import { VehMainDetailsEntryComponent } from "./lmssystem/vehmaindetails/vehmaindetails-entry/vehmaindetails-entry.component";
-import { QuBanMCComponent } from "./lmssystem/qubanmc/qubanmc.component";
-// import { QuBanMatComponent } from "./lmssystem/qubanmat/qubanmat.component";
-// import { QuBanFillComponent } from "./lmssystem/qubanfill/qubanfill.component";
-// import { QuBanOrdComponent } from "./lmssystem/qubanord/qubanord.component";
-import { QuestionBankComponent } from "./lmssystem/questionbank/questionbank.component";
-import { TestGradeComponent } from "./lmssystem/testgrade/testgrade.component";
-// import { TestGradeDetComponent } from "./lmssystem/testgradedet/testgradedet.component";
-import { SubTeQueComponent } from "./lmssystem/subteque/subteque.component";
-// import { SubTeFreeInputComponent } from "./lmssystem/subtefreeinput/subtefreeinput.component";
-// import { SubTeBlankComponent } from "./lmssystem/subteblank/subteblank.component";
-// import { SubTeMatComponent } from "./lmssystem/subtemat/subtemat.component";
-// import { SubTeOrderComponent } from "./lmssystem/subteorder/subteorder.component";
-import { QuBanMCEntryComponent } from "./lmssystem/qubanmc/qubanmc-entry/qubanmc-entry.component";
-// import { QuBanMatEntryComponent } from "./lmssystem/qubanmat/qubanmat-entry/qubanmat-entry.component";
-// import { QuBanFillEntryComponent } from "./lmssystem/qubanfill/qubanfill-entry/qubanfill-entry.component";
-// import { QuBanOrdEntryComponent } from "./lmssystem/qubanord/qubanord-entry/qubanord-entry.component";
-import { QuestionBankEntryComponent } from "./lmssystem/questionbank/questionbank-entry/questionbank-entry.component";
-import { TestGradeEntryComponent } from "./lmssystem/testgrade/testgrade-entry/testgrade-entry.component";
-// import { TestGradeDetEntryComponent } from "./lmssystem/testgradedet/testgradedet-entry/testgradedet-entry.component";
-import { SubTeQueEntryComponent } from "./lmssystem/subteque/subteque-entry/subteque-entry.component";
-// import { SubTeFreeInputEntryComponent } from "./lmssystem/subtefreeinput/subtefreeinput-entry/subtefreeinput-entry.component";
-// import { SubTeBlankEntryComponent } from "./lmssystem/subteblank/subteblank-entry/subteblank-entry.component";
-// import { SubTeMatEntryComponent } from "./lmssystem/subtemat/subtemat-entry/subtemat-entry.component";
-// import { SubTeOrderEntryComponent } from "./lmssystem/subteorder/subteorder-entry/subteorder-entry.component";
-
-import { ClassSubjectEntryComponent } from "./lmssystem/classsubject/classsubject-entry/classsubject-entry.component";
-import { subjectComponent } from "./lmssystem/subject/subject.component";
-import { subjectEntryComponent } from "./lmssystem/subject/subject-entry/subject-entry.component";
-// import { SubtemcComponent } from "./lmssystem/subtemc/subtemc.component";
-// import { SubTeMCEntryComponent } from "./lmssystem/subtemc/subtemc-entry/subtemc-entry.component";
-import { CustomerAccountComponent } from "./lmssystem/customeraccount/customeraccount.component";
-import { CustomerAccountEntryComponent } from "./lmssystem/customeraccount/customeraccount-entry/customeraccount-entry.component";
-import { SchoolYearEntryComponent } from "./lmssystem/schoolyear/schoolyear-entry/schoolyear-entry.component";
 import { ProductEntryComponent } from "./system/GeneratedComponents01Apr/product/product-entry/product-entry.component";
 import { ProductComponent } from "./system/GeneratedComponents01Apr/product/product.component";
 import { ServiceEnComponent } from "./system/GeneratedComponents01Apr/serviceen/serviceen.component";
@@ -339,8 +237,7 @@ import { ProductCategoryComponent } from "./system/GeneratedComponents01Apr/prod
 // import { ProductUnitEntryComponent } from "./system/GeneratedComponents01Apr/productunit/productunit-entry/productunit-entry.component";
 // import { ProductUnitComponent } from "./system/GeneratedComponents01Apr/productunit/productunit.component";
 import { Prod2Component } from "./system/AnotherComponents/productpricing/productpricing-entry/prod2.component";
-import { SubTeSubmissionComponent } from "./lmssystem/subTeSubmission/subTeSubmission.component";
-import { subTeSubmissionEntryComponent } from "./lmssystem/subTeSubmission/subtesubmission-entry/subtesubmission-entry.component";
+
 import { ExpenseFilingEntryComponent } from "./system/expensefiling/expensefiling/expensefiling-entry/expensefiling-entry.component";
 import { ExpenseFilingComponent } from "./system/expensefiling/expensefiling/expensefiling.component";
 import { ChangePasswordNewComponent } from "./system/change-password/change-password.component";
@@ -367,11 +264,9 @@ import { Checkforpass2Component } from "./system/AnotherComponents/chequefromcom
 import { ChequeFromCompanyComponent } from "./system/AnotherComponents/chequefromcompany/chequetocompany.component";
 import { Movetobank2Component } from "./system/AnotherComponents/chequefromcompany/movetobank/movetobank.component";
 import { ChequeFromCompanyEntryComponent } from "./system/AnotherComponents/chequefromcompany/chequetocompany-entry/chequetocompany-entry.component";
-import { CheckforIsActiveComponent } from "./lmssystem/schoolyear/checkfordelete/checkfordelete.component";
 import { ServiceEnEntry2Component } from "./system/GeneratedComponents01Apr/serviceen/serviceen-entry2/serviceen-entry.component";
 import { MyTestAutoComponent } from "./system/my-test-auto/my-test-auto.component";
 import { AssignToGroupComponent } from "./system/AnotherComponents/Registration-invoice/assign-to-group/movetobank.component";
-import { AssignToClassComponent } from "./lmssystem/subject/assign-to-group/movetobank.component";
 import { AlertifyService } from "./alertify.service";
 import { FeesComponent } from "./system/reports/fees/financial.component";
 import { ItemServiceComponent } from "./system/GeneratedComponents01Apr/item/serviceen.component";
@@ -379,6 +274,25 @@ import { ItemServiceEntry2Component } from "./system/GeneratedComponents01Apr/it
 import { ItemServiceEntryComponent } from "./system/GeneratedComponents01Apr/item/serviceen-entry/serviceen-entry.component";
 import { OtherInvoiceComponent } from "./system/AnotherComponents/Other-invoice/invoice.component";
 import { OtherInvoiceEntryComponent } from "./system/AnotherComponents/Other-invoice/invoice-entry/invoice-entry.component";
+import { SysCompComponent } from "./system/GeneratedComponents01Apr/syscomp/syscomp.component";
+import { SysCompUserComponent } from "./system/GeneratedComponents01Apr/syscompuser/syscompuser.component";
+import { SysCompEntryComponent } from "./system/GeneratedComponents01Apr/syscomp/syscomp-entry/syscomp-entry.component";
+import { SysCompUserEntryComponent } from "./system/GeneratedComponents01Apr/syscompuser/syscompuser-entry/syscompuser-entry.component";
+import { AlaadinNavigationComponent } from './alaadin-navigation/alaadin-navigation.component';
+import { AlaadinAccountSettingsComponent } from './alaadin-account-settings/alaadin-account-settings.component';
+import { AlaadinClientDataComponent } from './alaadin-client-data/alaadin-client-data.component';
+import { AlaadinChangePasswordComponent } from './alaadin-change-password/alaadin-change-password.component';
+import { SysCompUser2EntryComponent } from "./system/GeneratedComponents01Apr/syscompemployee/syscompuser-entry/syscompuser-entry.component";
+import { SysCompUser2Component } from "./system/GeneratedComponents01Apr/syscompemployee/syscompuser.component";
+import { SysWarehouseComponent } from "./system/GeneratedComponents01Apr/syswarehouse/syswarehouse.component";
+import { LoadPlanEntryComponent } from "./system/GeneratedComponents01Apr/loadplan/loadplan-entry/loadplan-entry.component";
+import { LoadPlanComponent } from "./system/GeneratedComponents01Apr/loadplan/loadplan.component";
+import { SysWarehouseEntryComponent } from "./system/GeneratedComponents01Apr/syswarehouse/syswarehouse-entry/syswarehouse-entry.component";
+import { AlaadinLoadPhotosComponent } from './alaadin-load-photos/alaadin-load-photos.component';
+import { LoadPicEntryComponent } from "./system/GeneratedComponents01Apr/loadpic/loadpic-entry/loadpic-entry.component";
+import { LoadPicComponent } from "./system/GeneratedComponents01Apr/loadpic/loadpic.component";
+import { AlaadinUploadComponent } from './alaadin-upload/alaadin-upload.component';
+import { AlaadinNotesComponent } from './alaadin-notes/alaadin-notes.component';
 
 
 
@@ -422,101 +336,7 @@ export const jwtConfig = {
   
   declarations: [
 
-   SchoolClassEntryComponent,
-    SchoolClassComponent,
-   TeacSubComponent,
-   TeacSubEntryComponent,
-    TeacherComponent,
-    SchoolGroupComponent,
-    subjectComponent,
-    subjectEntryComponent,
-    SchoolYearComponent,
-    StudentAttendComponent,
-    StudSubjComponent,
-    TeacherEntryComponent,
-    SchoolgroupEntryComponent,
-    CustomerAccountComponent,
-    CustomerAccountEntryComponent,
-    SchoolYearComponent,
-    StudentAttendEntryComponent,
-    StudSubjEntryComponent,
-   SubjectOutlineComponent,
-   SubjectOutlineEntryComponent,
-    TimetableComponent,
-    TimetableEntryComponent,
-//     SubOutlineUnComponent,
-//     SubOutlineUnEntryComponent,
-    SubjectTrackingComponent,
-    SubjectTrackingEntryComponent,
-//     SubjectContentComponent,
-//     SubjectContentEntryComponent,
-    SubjectHomeworkComponent,
-    SubjectHomeworkEntryComponent,
-    SubjTestMarksComponent,
-    SubjTestMarksEntryComponent,
-    GroupStudentComponent,
-    GroupStudentEntryComponent,
-    ClassSubjectComponent,
-    ClassSubjectEntryComponent,
-    HomeworkSubComponent,
-    HomeworkSubEntryComponent,
-    SubjTestComponent,
-    SubjTestEntryComponent,
-    VehicleComponent,
-    VehicleEntryComponent,
-    VehicleMileageComponent,
-    VehicleMileageEntryComponent,
-    VehRegComponent,
-    VehRegEntryComponent,
-    DriverComponent,
-    DriverEntryComponent,
-    VehicleOwnerComponent,
-    VehicleOwnerEntryComponent,
-    VehicleDriverComponent,
-	TripShiftComponent,
-// 	TripShiftDetailsComponent,
-	TripExecComponent,
-// 	TripExecDetailsComponent,
-// 	VehicleFuelComponent,
-// 	VehMainComponent,
-// 	VehMainDetailsComponent,
-  QuBanMCComponent,
-// QuBanMatComponent,
-// QuBanFillComponent,
-// QuBanOrdComponent,
-QuestionBankComponent,
-TestGradeComponent,
-// TestGradeDetComponent,
-SubTeQueComponent,
-// SubTeFreeInputComponent,
-// SubTeBlankComponent,
-// SubTeMatComponent,
-// SubTeOrderComponent,
-// SubtemcComponent,
-// SubTeMCEntryComponent,
-QuBanMCEntryComponent,
-// QuBanMatEntryComponent,
-// QuBanFillEntryComponent,
-// QuBanOrdEntryComponent,
-QuestionBankEntryComponent,
-TestGradeEntryComponent,
-// TestGradeDetEntryComponent,
-SubTeQueEntryComponent,
-// SubTeFreeInputEntryComponent,
-// SubTeBlankEntryComponent,
-// SubTeMatEntryComponent,
-// SubTeOrderEntryComponent,
-
-  VehicleDriverEntryComponent,
-	TripShiftEntryComponent,
-// 	TripShiftDetailsEntryComponent,
-	TripExecEntryComponent,
-// 	TripExecDetailsEntryComponent,
-// 	VehicleFuelEntryComponent,
-// 	VehMainEntryComponent,
-// 	VehMainDetailsEntryComponent,
-
-
+   
     AppComponent,
     NotActivatedComponent,
     AccountActivatedComponent,
@@ -650,7 +470,6 @@ SubTeQueEntryComponent,
     JournalEntryComponent,
     JournalEntryEntryComponent,
     UploadProfileComponent,
-    SchoolYearEntryComponent,
     
     UploadFiles2Component,
     ExpenseFilingEntryComponent,
@@ -701,8 +520,6 @@ SubTeQueEntryComponent,
     // IsDecimalDirectiveDirective,
     // ReportsComponent,
     FinancialComponent,
-    SubTeSubmissionComponent,
-    subTeSubmissionEntryComponent,
     ChangePasswordNewComponent,
     MySortComponent,
     MyFilterComponent,
@@ -727,19 +544,36 @@ SubTeQueEntryComponent,
     CheckforstateComp2Component,
     ConfBoxComponent,
     ChequeFromCompanyEntryComponent,
-    CheckforIsActiveComponent,
     ServiceEnComponent,
     ServiceEnEntryComponent,
     ServiceEnEntry2Component,
     MyTestAutoComponent,
     AssignToGroupComponent,
-    AssignToClassComponent,
     FeesComponent,
     ItemServiceComponent,
     ItemServiceEntry2Component,
     ItemServiceEntryComponent,
     OtherInvoiceEntryComponent,
-    OtherInvoiceComponent
+    OtherInvoiceComponent,
+    SysCompComponent,
+    SysCompUserComponent,
+    SysCompUser2Component,
+    SysCompUser2EntryComponent,
+    SysCompEntryComponent,
+    SysCompUserEntryComponent,
+    AlaadinNavigationComponent,
+    AlaadinAccountSettingsComponent,
+    AlaadinClientDataComponent,
+    AlaadinChangePasswordComponent,
+    LoadPlanComponent,
+    SysWarehouseComponent,
+    LoadPlanEntryComponent,
+    SysWarehouseEntryComponent,
+    AlaadinLoadPhotosComponent,
+    LoadPicComponent,
+    LoadPicEntryComponent,
+    AlaadinUploadComponent,
+    AlaadinNotesComponent
 
     
     
@@ -818,56 +652,6 @@ SubTeQueEntryComponent,
   ],
   bootstrap: [AppComponent],
   entryComponents: [
-//     SubTeMCEntryComponent,
-   CustomerAccountEntryComponent,
-    SchoolClassEntryComponent,
-    VehicleDriverEntryComponent,
-	TripShiftEntryComponent,
-// 	TripShiftDetailsEntryComponent,
-	TripExecEntryComponent,
-// 	TripExecDetailsEntryComponent,
-// 	VehicleFuelEntryComponent,
-// 	VehMainEntryComponent,
-// 	VehMainDetailsEntryComponent,
-  GroupStudentEntryComponent,
-	ClassSubjectEntryComponent,
-	HomeworkSubEntryComponent,
-	SubjTestEntryComponent,
-	VehicleEntryComponent,
-	VehicleMileageEntryComponent,
-	VehRegEntryComponent,
-	DriverEntryComponent,
-	VehicleOwnerEntryComponent,
-subjectEntryComponent,
-  QuBanMCEntryComponent,
-// QuBanMatEntryComponent,
-// QuBanFillEntryComponent,
-// QuBanOrdEntryComponent,
-QuestionBankEntryComponent,
-TestGradeEntryComponent,
-// TestGradeDetEntryComponent,
-SubTeQueEntryComponent,
-// SubTeFreeInputEntryComponent,
-// SubTeBlankEntryComponent,
-// SubTeMatEntryComponent,
-// SubTeOrderEntryComponent,
-//     //Time,
-//     SubOutlineUnEntryComponent,
-    SubjectTrackingEntryComponent,
-//     SubjectContentEntryComponent,
-    SubjectHomeworkEntryComponent,
-    SubjTestMarksEntryComponent,
-    TeacherEntryComponent,
-    SchoolgroupEntryComponent,
-    StudentAttendEntryComponent,
-    TeacSubEntryComponent,
-   
-    
-    SchoolYearEntryComponent,
-    StudSubjEntryComponent,
-    TeacSubEntryComponent,
-    SubjectOutlineEntryComponent,
-    TimetableEntryComponent,
     ErrorBoxComponent,
     ErrorApiBoxComponent,
     WarningBoxComponent,
@@ -938,7 +722,6 @@ SubTeQueEntryComponent,
     // JournaldynamicEntryComponent,
     // ProductStockEntryComponent,
     Prod2Component,
-    subTeSubmissionEntryComponent,
     ChangePasswordNewComponent,
     MySortComponent,
     MyFilterComponent,
@@ -958,15 +741,20 @@ SubTeQueEntryComponent,
     Movetobank2Component,
     Checkforpass2Component,
     ChequeFromCompanyEntryComponent,
-    CheckforIsActiveComponent,
     ServiceEnEntryComponent,
     ServiceEnEntry2Component,
     AssignToGroupComponent,
-    AssignToClassComponent,
     FeesComponent,
     ItemServiceEntry2Component,
     ItemServiceEntryComponent,
     OtherInvoiceEntryComponent,
+    SysCompEntryComponent,
+    SysCompUserEntryComponent,
+    SysCompUser2EntryComponent,
+    LoadPlanEntryComponent,
+    SysWarehouseEntryComponent,
+    LoadPicEntryComponent,
+    AlaadinNotesComponent
     
     
   ]

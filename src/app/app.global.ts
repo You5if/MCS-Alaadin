@@ -24,9 +24,9 @@ export class AppGlobals {
   //   readonly baseAPIRootUrl: string = 'https://localhost:44377/api/';
 
   /* Development Server */
-  readonly baseAPIFileUrl: string = "http://lmsapi.autopay-mcs.com/";
-  readonly baseAPIUrl: string = "http://lmsapi.autopay-mcs.com/api/";
-  readonly baseAPIRootUrl: string = "http://lmsapi.autopay-mcs.com/api/";
+  readonly baseAPIFileUrl: string = "https://newapi.aladdinshipping.com/";
+  readonly baseAPIUrl: string = "https://newapi.aladdinshipping.com/api/";
+  readonly baseAPIRootUrl: string = "https://newapi.aladdinshipping.com/api/";
 
   /* Live Server */
   // readonly baseAPIFileUrl: string = "https://appapi.aladdinshipping.com/";

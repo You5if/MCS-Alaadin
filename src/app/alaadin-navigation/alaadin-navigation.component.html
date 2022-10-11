@@ -1,0 +1,179 @@
+<div class="body">   
+<div class="wide-wrapper">
+    <div class="top1">
+        <div class="top1Text">
+            Shipping & Export from U.S.
+        </div>
+    </div>
+   <div class="topBack">
+    <div class="top2">
+        <div class="logo" (click)="onLogo()">
+            <img class="logo-img" src="../../assets/images/svg/al-logo-white.png" alt="">
+        </div>
+        <div class="login-sec">
+            <div fxLayout fxLayout.xs="column" fxLayoutGap="5px">
+                <div fxLayout fxLayoutGap="5px">
+                    <div class="topLeftText">{{companyName}} |</div>
+                <!-- <div class="topLeftText">|</div> -->
+                <div class="topLeftText">ID:{{companyId}} |</div>
+                </div>
+                <!-- <div class="topLeftText">|</div> -->
+               <div fxLayout fxLayoutGap="5px">
+                <div class="topLeftTextLogout" (click)="onSignOut()">Logout |</div>
+                <!-- <div class="topLeftText">|</div> -->
+                <div class="topLeftText2" (click)="onAccountSettings()">Account settings</div>
+               </div>
+            </div>
+        </div>
+    </div>
+   </div>
+   <div class="mainZone">
+    <div class="customerZone">
+        Customer zone
+       </div>
+       <div class="rowRed">
+        <div class="redLinks">Auto</div>
+        &nbsp;<span >&#8226;</span>&nbsp;
+        <!-- <div class="redLinks">Announcements</div> -->
+       </div>
+       <!-- <div class="customers-messages">
+        <div class="customers-messages-header"><span class="customers-messages-date">2022-09-06 36</span> Week of 2022 update USA warehouses</div>
+        <div class="customers-messages-content">
+            Dear clients,
+
+Here is our weekly update across USA warehouses -
+
+In WA no dispatch delays. Clients are welcome to buy and deliver cars. Loading with Yang Ming and Evergreen to Jebel Ali, all other destinations with MSC.
+*** W8 shipping returns to regular storage terms effective all vehicles purchased May 24th, 2022 – see below reminder on storage term explanation.
+
+In CA no dispatch delay. This week loading all destinations, still behind on Batumi and Poti.
+*** W8 shipping returns to regular storage terms effective all vehicles purchased May 24th, 2022 – see below reminder on storage term explanation.
+
+In TX no dispatch delay. Loading Aqaba, Jebel Ali, Salalah this week.
+*** W8 shipping returns to regular storage terms effective all vehicles purchased May 24th, 2022 – see below reminder on storage term explanation.
+
+In GA currently no dispatch delay. Will load the last of delayed HAZ to Bremerhaven, Klaipeda and Rotterdam next week. Loading all destinations, but still very much behind on GE loadings.
+*** W8 shipping returns to regular storage terms effective all vehicles purchased August 8th 2022 – see below reminder on storage term explanation. Still not taking responsibility for delayed destination - Georgia until further notice.
+
+In NY no dispatch delay and no loading delay except Georgia, where we are still very behind and not taking responsibility for storages. Loading all other destinations.
+***W8 shipping returns to regular storage terms effective all vehicles purchased August 8th 2022 – see below reminder on storage term explanation. Still not taking responsibility for delayed destination Georgia.
+
+
+Thank you!
+
+*** Reminder of storage term policy: W8 Shipping will take responsibility for extra storage charges for auctioned vehicles paid for by Customer, within 3 business days from date of payment, excluding date of payment. All storage fees charged by auction, if any, will be responsibility of W8 Shipping after three days excluding date of payment, unless vehicle is located at an offsite location, and/or cargo is oversize or odd size, or if otherwise necessary, and forklift services are not available at pick up location.
+
+*Dates, timelines and loading circumstances provided, are estimates only and can change with or without notice at any moment, based on various factors that are evaluated by each warehouse constructed on their individual circumstances influenced by local port and vessel operations that can change on daily, sometimes hourly basis.
+        </div>
+        <div class="closeMessageSec">
+            <div class="closeMessage">close Message</div>
+        </div>
+       </div> -->
+       
+
+     
+       <div class="wareDiv">
+        <div class="warehouses">
+            <div *ngFor="let warehouse of warehouses" class="inactive">
+                <h4 class="labelFonts">{{ warehouse.warehouse }}</h4>
+                <a >All <span>{{warehouse.all}}</span></a>
+                <a >At the Terminal <span>{{warehouse.terminal}}</span></a>
+                <a >Dispached <span>{{warehouse.dispatched}}</span></a>
+                <a >New <span>{{warehouse.newCount}}</span></a>
+                <a >Loaded <span>{{warehouse.loaded}}</span></a>
+            </div>
+            
+            <!-- <div>
+                <h4 class="labelFonts">TX Warehouse</h4>
+                <a href="?act=autos&amp;filter=TX,1">All <span>5</span></a>
+                <a href="?act=autos&amp;filter=TX,2">At the Terminal <span>0</span></a>
+                <a href="?act=autos&amp;filter=TX,3">Dispached <span>0</span></a>
+                <a href="?act=autos&amp;filter=TX,4">New <span>0</span></a>
+                <a href="?act=autos&amp;filter=TX,5">Loaded <span>5</span></a>
+            </div>
+            
+            <div class="inactive">
+                <h4 class="labelFonts">Self shipping</h4>
+                <a href="?act=autos&amp;filter=Self shipping,1">All <span>0</span></a>
+                <a href="?act=autos&amp;filter=Self shipping,2">At the Terminal <span>0</span></a>
+                <a href="?act=autos&amp;filter=Self shipping,3">Dispached <span>0</span></a>
+                <a href="?act=autos&amp;filter=Self shipping,4">New <span>0</span></a>
+                <a href="?act=autos&amp;filter=Self shipping,5">Loaded <span>0</span></a>
+            </div> -->
+        </div>
+           <div class="alaTable">
+            <button class="passwordText2" (click)="generateExcel()">Download to excel</button>
+                <table class="autos">
+                    <tbody>
+                        <tr>
+                            <th>ID</th>
+                            <th>Photo</th>
+                            <th>Date</th>
+                            <th>Model</th>
+                            <th>LOT</th>
+                            <th>VIN number</th>
+                            <th>Point of loading</th>
+                            <th>Auction</th>
+                            <th>Destination port</th>
+                            <th>Container number Booking</th>
+                            <th>Promised to be picked up</th>
+                            <th>Delivered to warehouse</th>
+                            <th>Arrival Date</th>
+                            <th>Unloading date</th>
+                            <!-- <th>Dock receipt</th> -->
+                            <th>Title status</th>
+                            <th>Title received</th>
+                            <th>Keys</th>
+                            <th>Action</th>
+                            <th>Notes</th>
+                            <!-- <th>Invoice for auto</th> -->
+                            <th>Auto price</th>
+                            <th>Paid</th>
+                            <th>Sold</th>
+                            <th>Notes for yourself</th>
+                            <th>Terminal notes</th>
+                        </tr>
+                        
+                            <tr class="loads" *ngFor="let load of loadPlan">
+                                <td class="loadsLink">{{load.loadPlanId}}</td>
+                                <td ><div (click)="openPics(load)" class="loadsPic">
+                                    <img   src="{{load.showImage ? load.firstPic.profileAPIImagePath : ''}}" width="57" height="40" alt=""> {{load.picsArrayLength}}
+                                </div></td>
+                                <td class="loadsLink" (click)="openPics(load)">{{load.loadDate | date}}</td>
+                                <td class="loadsLink" (click)="openPics(load)">{{load.model}}</td>
+                                <td>{{load.lot}}</td>
+                                <td>{{load.vin}}</td>
+                                <td>{{load.pol}}</td>
+                                <td>{{load.auction}}</td>
+                                <td>{{load.destPort}}</td>
+                                <td class="loadsLink" (click)="openPics(load)">{{load.bookNo}}</td>
+                                <td>{{load.pickDate | date}}</td>
+                                <td>{{load.promDelDate | date}}</td>
+                                <td>{{load.arrDate | date}}</td>
+                                <td >{{load.unloadDate | date}}</td>
+                                <!-- <td class="loadsLink" (click)="openPics(load)">Dock receipt</td> -->
+                                <td><div *ngIf="load.title === true">Yes</div><div *ngIf="load.title === false">No</div></td>
+                                <td>{{load.titleRec}}</td>
+                                <td><div *ngIf="load.keys === true">Yes</div><div *ngIf="load.keys === false">No</div></td>
+                                <td>{{load.action}}</td>
+                                <td>{{load.notes}}</td>
+                                <!-- <td class="loadsLink" (click)="openPics(load)">Invoice for auto</td> -->
+                                <td>{{load.autoPrice}}</td>
+                                <td>{{load.paid}}</td>
+                                <td>{{load.sold}}</td>
+                                <td  >
+                                    {{load.clientNote}}
+                                    <p  (click)="onEdit(load.loadPlanId)" class="loadsLink">[edit]</p>
+                                </td>
+                                <td>{{load.termNote}}</td>
+                            </tr>
+                        
+                      
+                    </tbody>
+                </table>
+           </div>
+       </div>
+   </div>
+   <div class="footer">powered by markon</div>
+</div>
+</div>

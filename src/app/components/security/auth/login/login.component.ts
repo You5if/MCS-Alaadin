@@ -59,7 +59,7 @@ export class LoginComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.titleService.setTitle("LMS - Login");
+    this.titleService.setTitle("Aladin - Login");
     // this.googleImagePath = this._globals.baseAPIFileUrl+'/resources/images/btn_google_signin_light_normal_web.png';
     this.valUserObject = {
       username: '',
@@ -241,7 +241,17 @@ this.companyObject = {
             this._auth.login(form.value).subscribe((data: UserModule) => {
               if (data !== null) {
                 localStorage.setItem('sdCompanyId', data.companyId.toString());
-                this.router.navigate(['/System']);
+                localStorage.setItem('sdCompanyId', data.companyId.toString());
+localStorage.setItem('AlaadinCompanyId', data.companyId.toString());
+localStorage.setItem('AlaadinCompanyName', data.company.toString());
+localStorage.setItem('AlaadinSysCompUserId', data.sysCompUserId.toString());
+
+                
+                if (data.roleId === 2) {
+                  this.router.navigate(['/System']);
+                } else if (data.roleId === 12) {
+                  this.router.navigate(['/Home']);
+                }
                 this._ui.loadingStateChanged.next(false);
                 return true;
               } else {

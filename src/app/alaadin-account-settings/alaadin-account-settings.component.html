@@ -1,0 +1,53 @@
+<div class="body">   
+    <div class="wide-wrapper">
+        <div class="top1">
+            <div class="top1Text">
+                Shipping & Export from U.S.
+            </div>
+        </div>
+       <div class="topBack">
+        <div class="top2">
+           <div class="logo" (click)="onLogo()">
+                <img class="logo-img" src="../../assets/images/svg/al-logo-white.png" alt="">
+            </div>
+            <div class="logo" (click)="onLogo()">
+                <img class="logo-img" src="../../assets/images/svg/al-logo-white.png" alt="">
+            </div>
+            <div class="login-sec">
+                <div fxLayout fxLayout.xs="column" fxLayoutGap="5px">
+                    <div fxLayout fxLayoutGap="5px">
+                        <div class="topLeftText">{{companyName}} |</div>
+                    <!-- <div class="topLeftText">|</div> -->
+                    <div class="topLeftText">ID:{{companyId}} |</div>
+                    </div>
+                    <!-- <div class="topLeftText">|</div> -->
+                   <div fxLayout fxLayoutGap="5px">
+                    <div class="topLeftTextLogout" (click)="onSignOut()">Logout |</div>
+                    <!-- <div class="topLeftText">|</div> -->
+                    <div class="topLeftText2" (click)="onAccountSettings()">Account settings</div>
+                   </div>
+                </div>
+            </div>
+        </div>
+       </div>
+       <div class="main">
+        
+        <div class="botmain">
+            <div class="navDrawer">
+                <div class="navDrawerLi" (click)="onClientData()"><span class="next">&#8226;</span> Client data </div>
+                
+                <div class="navDrawerLi" (click)="onChangePassword()"><span class="next">&#8226;</span> Change password </div>
+                
+            </div>
+            <div class="textM">
+                <div class="maintext">Account settings</div>
+            </div>
+          <div class="illustDiv">
+            <img class="illust" src="../../assets/images/svg/undraw_online_cv_re_gn0a.svg" alt="">
+        
+          </div>
+        </div>
+       </div>
+    </div>
+    </div>
+    

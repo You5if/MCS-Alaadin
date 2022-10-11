@@ -1,0 +1,69 @@
+<div class="body">   
+    <div class="wide-wrapper">
+        <div class="top1">
+            <div class="top1Text">
+                Shipping & Export from U.S.
+            </div>
+        </div>
+       <div class="topBack">
+        <div class="top2">
+           <div class="logo" (click)="onLogo()">
+                <img class="logo-img" src="../../assets/images/svg/al-logo-white.png" alt="">
+            </div>
+            <div class="login-sec">
+                <div fxLayout fxLayout.xs="column" fxLayoutGap="5px">
+                    <div fxLayout fxLayoutGap="5px">
+                        <div class="topLeftText">{{companyName}} |</div>
+                    <!-- <div class="topLeftText">|</div> -->
+                    <div class="topLeftText">ID:{{companyId}} |</div>
+                    </div>
+                    <!-- <div class="topLeftText">|</div> -->
+                   <div fxLayout fxLayoutGap="5px">
+                    <div class="topLeftTextLogout" (click)="onSignOut()">Logout |</div>
+                    <!-- <div class="topLeftText">|</div> -->
+                    <div class="topLeftText2" (click)="onAccountSettings()">Account settings</div>
+                   </div>
+                </div>
+            </div>
+        </div>
+       </div>
+       <div class="main">
+        
+            <!-- <div class="maintext">Change password</div>
+         -->
+        <div class="botmain">
+            <div class="navDrawer">
+                <div class="navDrawerLi2" (click)="onClientData()"><span >&#8226;</span>&nbsp; Client data </div>
+                
+                <div class="navDrawerLi" (click)="onChangePassword()"><span class="next">&#8226;</span> Change password </div>
+                
+            </div>
+
+            <div class="marginR">
+                <div class="maintext">Client data</div>
+                <div class="illustDiv" fxLayout fxLayoutGap="10px">
+                    <div fxLayout="column" class="formClient">
+                        <div class="passwordText3">Change profile data</div>
+                        <div fxLayout class="password" fxLayoutGap="5px">
+                            <div class="passwordText">Contact name:</div>
+                        <input [(ngModel)]="data[3].value"   type="text">
+                        </div>
+                        <div fxLayout class="password" fxLayoutGap="5px">
+                            <div class="passwordText">Phone number:</div>
+                        <input [(ngModel)]="data[2].value"   type="number">
+                        </div>
+                        <button (click)="onChange()" class="passwordText2">Change</button>
+                    </div>
+                    <img class="illust" src="../../assets/images/svg/undraw_profile_data_re_v81r.svg" alt="">
+                    
+                </div>
+            </div>
+          <!-- <div class="illustDiv">
+            <img class="illust" src="../../assets/images/svg/undraw_online_cv_re_gn0a.svg" alt="">
+        
+          </div> -->
+        </div>
+       </div>
+    </div>
+    </div>
+    

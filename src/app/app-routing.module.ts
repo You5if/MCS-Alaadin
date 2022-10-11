@@ -33,52 +33,7 @@ import { AdminGuard } from "./components/security/Guard/admin.guard";
 import { DynamicFormComponent } from "./dynamic-form/dynamic-form.component";
 import { SystemNavigationComponent } from "./system/system-navigation/system-navigation.component";
 import { SystemHomeComponent } from "./system/system-home/system-home.component";
-import { SchoolClassComponent } from "./lmssystem/schoolclass/schoolclass.component";
-import { SchoolGroupComponent } from "./lmssystem/schoolgroup/schoolgroup.component";
-import { SchoolYearComponent } from "./lmssystem/schoolyear/schoolyear.component";
-import { StudentAttendComponent } from "./lmssystem/studentattend/studentattend.component";
-import { StudSubjComponent } from "./lmssystem/studsubj/studsubj.component";
-import { subjectComponent } from "./lmssystem/subject/subject.component";
-import { TeacherComponent } from "./lmssystem/teacher/teacher.component";
-import { CustomerAccountComponent } from "./lmssystem/customeraccount/customeraccount.component";
-import { TimetableComponent } from "./lmssystem/timetable/timetable.component";
-import { TeacSubComponent } from "./lmssystem/teacsub/teacsub.component";
-import { SubjectOutlineComponent } from "./lmssystem/subjectoutline/subjectoutline.component";
-// import { SubOutlineUnComponent } from "./lmssystem/suboutlineun/suboutlineun.component";
-// import { SubjectContentComponent } from "./lmssystem/subjectcontent/subjectcontent.component";
-import { SubjectHomeworkComponent } from "./lmssystem/subjecthomework/subjecthomework.component";
-import { SubjectTrackingComponent } from "./lmssystem/subjecttracking/subjecttracking.component";
-import { SubjTestMarksComponent } from "./lmssystem/subjtestmarks/subjtestmarks.component";
-import { GroupStudentComponent } from "./lmssystem/groupstudent/groupstudent.component";
-import { SubTeSubmissionComponent } from "./lmssystem/subTeSubmission/subTeSubmission.component";
-import { ClassSubjectComponent } from "./lmssystem/classsubject/classsubject.component";
-import { HomeworkSubComponent } from "./lmssystem/homeworksub/homeworksub.component";
-import { SubjTestComponent } from "./lmssystem/subjtest/subjtest.component";
-import { VehicleMileageComponent } from "./lmssystem/vehiclemileage/vehiclemileage.component";
-import { VehicleComponent } from "./lmssystem/vehicle/vehicle.component";
-import { VehRegComponent } from "./lmssystem/vehreg/vehreg.component";
-import { DriverComponent } from "./lmssystem/driver/driver.component";
-import { VehicleOwnerComponent } from "./lmssystem/vehicleowner/vehicleowner.component";
-import { VehicleDriverComponent } from "./lmssystem/vehicledriver/vehicledriver.component";
-import { TripShiftComponent } from "./lmssystem/tripshift/tripshift.component";
-// import { TripShiftDetailsComponent } from "./lmssystem/tripshiftdetails/tripshiftdetails.component";
-import { TripExecComponent } from "./lmssystem/tripexec/tripexec.component";
-// import { TripExecDetailsComponent } from "./lmssystem/tripexecdetails/tripexecdetails.component";
-// import { VehicleFuelComponent } from "./lmssystem/vehiclefuel/vehiclefuel.component";
-// import { VehMainComponent } from "./lmssystem/vehmain/vehmain.component";
-// import { VehMainDetailsComponent } from "./lmssystem/vehmaindetails/vehmaindetails.component";
-import { QuBanMCComponent } from "./lmssystem/qubanmc/qubanmc.component";
-// import { QuBanMatComponent } from "./lmssystem/qubanmat/qubanmat.component";
-// import { QuBanFillComponent } from "./lmssystem/qubanfill/qubanfill.component";
-// import { QuBanOrdComponent } from "./lmssystem/qubanord/qubanord.component";
-import { QuestionBankComponent } from "./lmssystem/questionbank/questionbank.component";
-import { TestGradeComponent } from "./lmssystem/testgrade/testgrade.component";
-// import { TestGradeDetComponent } from "./lmssystem/testgradedet/testgradedet.component";
-import { SubTeQueComponent } from "./lmssystem/subteque/subteque.component";
-// import { SubTeFreeInputComponent } from "./lmssystem/subtefreeinput/subtefreeinput.component";
-// import { SubTeBlankComponent } from "./lmssystem/subteblank/subteblank.component";
-// import { SubTeMatComponent } from "./lmssystem/subtemat/subtemat.component";
-// import { SubTeOrderComponent } from "./lmssystem/subteorder/subteorder.component";
+
 import { SystemBusinessProfileComponent } from "./system/system-business-profile/system-business-profile.component";
 import { SystemTaxComponent } from "./system/tax/system-tax/system-tax.component";
 import { AccountComponent } from "./system/account/account.component";
@@ -116,9 +71,22 @@ import { ServiceEnComponent } from "./system/GeneratedComponents01Apr/serviceen/
 import { FeesComponent } from "./system/reports/fees/financial.component";
 import { ItemServiceComponent } from "./system/GeneratedComponents01Apr/item/serviceen.component";
 import { OtherInvoiceComponent } from "./system/AnotherComponents/Other-invoice/invoice.component";
+import { SysCompComponent } from "./system/GeneratedComponents01Apr/syscomp/syscomp.component";
+import { SysCompUserComponent } from "./system/GeneratedComponents01Apr/syscompuser/syscompuser.component";
+import { AlaadinNavigationComponent } from "./alaadin-navigation/alaadin-navigation.component";
+import { AlaadinAccountSettingsComponent } from "./alaadin-account-settings/alaadin-account-settings.component";
+import { AlaadinClientDataComponent } from "./alaadin-client-data/alaadin-client-data.component";
+import { AlaadinChangePasswordComponent } from "./alaadin-change-password/alaadin-change-password.component";
+import { SysCompUser2Component } from "./system/GeneratedComponents01Apr/syscompemployee/syscompuser.component";
+import { LoadPlanComponent } from "./system/GeneratedComponents01Apr/loadplan/loadplan.component";
+import { SysWarehouseComponent } from "./system/GeneratedComponents01Apr/syswarehouse/syswarehouse.component";
+import { AlaadinLoadPhotosComponent } from "./alaadin-load-photos/alaadin-load-photos.component";
+import { LoadPicComponent } from "./system/GeneratedComponents01Apr/loadpic/loadpic.component";
+import { AlaadinUploadComponent } from "./alaadin-upload/alaadin-upload.component";
 
 
 const routes: Routes = [
+  // { path: "", component:  AlaadinNavigationComponent},
   { path: "", component: LoginComponent },
   
   
@@ -134,64 +102,30 @@ const routes: Routes = [
   },
   
   {
+    path: "test",
+    component: SystemHomeComponent,
+    data: { title: "Login to get access to an instant service" },
+  },
+  
+  {
     path: "",
     runGuardsAndResolvers: "always",
     canActivate: [AuthGuard],
     children: [
       { path: "dashboard", component: DashboardComponent },
-     
+      { path: "Home", component:  AlaadinNavigationComponent},
+      { path: "AccountSettings", component:  AlaadinAccountSettingsComponent},
+      { path: "loaddetails", component:  AlaadinLoadPhotosComponent},
+      { path: "ClientData", component:  AlaadinClientDataComponent},
+      { path: "ChangePassword", component:  AlaadinChangePasswordComponent},
       { path: "dynamic", component: DynamicFormComponent },
       { path: "System", component: SystemNavigationComponent, children: [
         { path: '', redirectTo: 'Home', pathMatch: 'full' },
         { path: "Home", component: SystemHomeComponent},
-        { path: "schoolclass", component: SchoolClassComponent},
+        
         { path: "cheque", component: ChequeToCompanyComponent},
         { path: "chequeFrom", component: ChequeFromCompanyComponent},
-        { path: "schoolgroup", component: SchoolGroupComponent},
-        { path: "schoolyear", component: SchoolYearComponent},
-        { path: "studentattend", component: StudentAttendComponent},
-        { path: "studsubj", component: StudSubjComponent},
-        { path: "subject", component: subjectComponent},
-        { path: "teacher", component: TeacherComponent},
-        { path: "customeraccount", component: CustomerAccountComponent},
-        { path: "timetable", component: TimetableComponent},
-        { path: "teacsub", component: TeacSubComponent},
-        { path: "subjectoutline", component: SubjectOutlineComponent},
-      //   { path: "suboutlineun", component: SubOutlineUnComponent},
-      //   { path: "subjectcontent", component: SubjectContentComponent},
-        { path: "subjecthomework", component: SubjectHomeworkComponent},
-        { path: "subjecttracking", component: SubjectTrackingComponent},
-        { path: "subjtestmarks", component: SubjTestMarksComponent},
-        { path: "groupstudent", component: GroupStudentComponent},
-        { path: "subTeSubmission", component: SubTeSubmissionComponent},
-        { path: "classsubject", component: ClassSubjectComponent},
-        { path: "homeworksub", component: HomeworkSubComponent},
-        { path: "subjtest", component: SubjTestComponent},
-        { path: "vehiclemileage", component: VehicleMileageComponent},
-        { path: "vehicle", component: VehicleComponent},
-        { path: "vehreg", component: VehRegComponent},
-        { path: "driver", component: DriverComponent},
-        { path: "vehicleowner", component: VehicleOwnerComponent},
-        { path: "vehicledriver", component: VehicleDriverComponent},
-        { path: "tripshift", component: TripShiftComponent},
-      //   { path: "tripshiftdetails", component: TripShiftDetailsComponent},
-        { path: "tripexec", component: TripExecComponent},
-      //   { path: "tripexecdetails", component: TripExecDetailsComponent},
-      //   { path: "vehiclefuel", component: VehicleFuelComponent},
-      //   { path: "vehmain", component: VehMainComponent},
-      //   { path: "vehmaindetails", component: VehMainDetailsComponent},
-        { path: "qubanmc", component: QuBanMCComponent},
-      //   { path: "qubanmat", component: QuBanMatComponent},
-      //   { path: "qubanfill", component: QuBanFillComponent},
-      //   { path: "qubanord", component: QuBanOrdComponent},
-        { path: "questionbank", component: QuestionBankComponent},
-        { path: "testgrade", component: TestGradeComponent},
-      //   { path: "testgradedet", component: TestGradeDetComponent},
-        { path: "subteque", component: SubTeQueComponent},
-      //   { path: "subtefreeinput", component: SubTeFreeInputComponent},
-      //   { path: "subteblank", component: SubTeBlankComponent},
-      //   { path: "subtemat", component: SubTeMatComponent},
-      //   { path: "subteorder", component: SubTeOrderComponent},
+       
         { path: "BusinessProfile", component: SystemBusinessProfileComponent},
         { path: "Tax", component: TaxComponent},
         { path: "Account", component: AccountComponent},
@@ -219,6 +153,12 @@ const routes: Routes = [
         { path: "PaymentToCompany", component: PaymentToCompanyComponent},
         { path: "ProductPricing", component: ProductPricingComponent},
         { path: "StockIn", component: StockInComponent},
+        { path: "company", component: SysCompComponent},
+        { path: "users", component: SysCompUserComponent},
+        { path: "employee", component: SysCompUser2Component},
+        { path: "loadpic", component: LoadPicComponent},
+        { path: "loadplan", component: LoadPlanComponent},
+        { path: "warehouse", component: SysWarehouseComponent},
         { path: "StockMovement", component: StockMovementComponent},
       //   { path: "ProductStock", component: ProductStockComponent},
         { path: "FinancialReports", component: FinancialComponent},

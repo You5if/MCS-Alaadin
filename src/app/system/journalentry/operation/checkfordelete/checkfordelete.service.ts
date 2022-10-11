@@ -33,8 +33,8 @@ export class CheckfordeleteService {
     
   
 
-    getDelete(name:string ,id: number): Observable<any> {
-      return this.httpClient.get<any>(this._globals.baseAPIUrl + name + '/delete/' + id).pipe(
+    getDelete(id: number): Observable<any> {
+      return this.httpClient.get<any>(this._globals.baseAPIUrl  + 'User/deleteuser/' + id).pipe(
       map((result: any) => {
       return result;
       }), catchError(this._cf.handleError)

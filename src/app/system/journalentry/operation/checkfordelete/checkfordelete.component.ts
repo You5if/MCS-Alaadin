@@ -24,7 +24,7 @@ export class CheckfordeleteComponent implements OnInit {
   }
 
   onYesClick(): void{
-    this.invoiceservice.getDelete(this.data.name, this.data.id).subscribe((result) => {
+    this.invoiceservice.getDelete(this.data.id).subscribe((result) => {
       this.dialogRef.close();
     })
   }

@@ -60,7 +60,12 @@ export class SystemNavigationComponent implements OnInit {
   productPricing!: string;
   productStock!: string;
   productUnitConversion!: string;
+  clientManagement!: string;
+  company!: string;
+  users!: string;
+  employee!: string; 
   warehouse!: string;
+  loadplan!: string;
   stockIn!: string;
   stockMovement!: string;
   logout!: string;
@@ -139,6 +144,7 @@ subteorder!:string;
   generalAdiminitration!: string;
   financialReports!: string;
   feesReports!: string;
+  loadpic!: string;
 
   constructor(private _globals: AppGlobals,
     public dialog: MatDialog,
@@ -149,14 +155,20 @@ subteorder!:string;
 
 
 ngOnInit(): void {
-  this.titleService.setTitle("LMS - System");
+  // if(this._auth.getRole() === "12") {
+  //   this.router.navigate(['/Home']);
+  // }
+  this.titleService.setTitle("Alaadin - System");
   this.role = localStorage.getItem("role");
   console.log(this.role);
   this.resizeStyle = {
     "max-width": `30%`,
   };
   // new menu item value
-  this.student='Student'
+  this.clientManagement='Client management'
+  this.company='Company'
+  this.users='Users'
+  this.employee='Employees'
   this.qubanmc= 'Quetion bank MC'   
   this.qubanmat ='Question bank mat' 
   this.qubanfill = 'Quaetion bank fill'
@@ -249,6 +261,8 @@ this.subTeSubmission='Student exam submission'
       this.productStock = "Service stock"
       this.productUnitConversion = "Service unit conversion"
       this.warehouse = "Warehouse"
+      this.loadplan = "Load plan"
+      this.loadpic = "Load images"
       this.stockIn = "Stock in"
       this.stockMovement = "Stock movement"
       this.logout = "Logout"
@@ -744,7 +758,10 @@ onChangeLanguage() {
   if (localStorage.getItem(this._globals.baseAppName + '_language') == "16002") {
     this.lang = "Arabic"
     this.direction = "ltr"
-    this.student='Student'
+    this.clientManagement='Client management'
+  this.company='Company'
+  this.users='Users'
+  this.employee='Employees'
 this.qubanmc= 'Quetion bank MC'   
 this.qubanmat ='Question bank mat' 
 this.qubanfill = 'Quaetion bank fill'
@@ -835,6 +852,8 @@ this.home = "Home"
     this.productStock = "Service stock"
     this.productUnitConversion = "Service unit conversion"
     this.warehouse = "Warehouse"
+    this.loadplan = "Load plan"
+    this.loadpic = "Load images"
     this.reports = "Reports"
     this.stockIn = "Stock in"
     this.financialReports = "Financial reports"
@@ -854,7 +873,10 @@ this.home = "Home"
     this.journal = "السجلات"
     this.generalAdiminitration = "الادارة العامة"
     this.invoice = "الفواتير"
-    this.student = "الطلاب"
+    this.clientManagement='ادارة العملاء'
+  this.company='الشركة'
+  this.users='المستخدمين'
+  this.employee='الموظفين'
     this.financialReports = "التقارير المالية"
     this.feesReports = "تحليل الرسوم"
     this.changePassword = "تغيير كلمة السر"
@@ -890,6 +912,8 @@ this.oInvoice = "فواتير اخرى"
     this.productStock = "مخزون الخدمة"
     this.productUnitConversion = "تحولات وحدات الخدمة"
     this.warehouse = "المخازن"
+    this.loadplan = "خطة التحميل"
+    this.loadpic = "صور الحمولة"
     this.stockIn = "المخزون الداخل"
     this.stockMovement = "المخزون الخارج"
     this.logout = "تسجيل الخروج"
@@ -946,7 +970,10 @@ this.oInvoice = "فواتير اخرى"
   }else if (localStorage.getItem(this._globals.baseAppName + '_language') == "") {
     this.lang = "Arabic"
     this.direction = "ltr"
-    this.student='Student'
+    this.clientManagement='Client management'
+  this.company='Company'
+  this.users='Users'
+  this.employee='Employees'
     this.financialReports = "Financial reports"
     this.feesReports = "Fees analysis"
     this.reports = "Reports"
@@ -1039,6 +1066,8 @@ this.home = "Home"
     this.productStock = "Service stock"
     this.productUnitConversion = "Service unit conversion"
     this.warehouse = "Warehouse"
+    this.loadplan = "Load plan"
+    this.loadpic = "Load images"
     this.stockIn = "Stock in"
     this.stockMovement = "Stock movement"
     this.logout = "Logout"

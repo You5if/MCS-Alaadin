@@ -30,11 +30,13 @@ export class UserModule {
       public userName: string,
       public displayName: string,
       public companyId: number,
+      public sysCompUserId: number,
       public company: string,
       public userStatus: number,
       public registrationActive: Boolean,
       public registrationExpiryDate: Date,
       public active: Boolean,
-      public token: string
+      public token: string,
+      public roleId: number
 ) { }
 }
