@@ -40,6 +40,7 @@ export class WarehouseDetModel {
         public loaded: number= 0,
         public newCount: number= 0,
         public terminal: number= 0,
+        public warehouseActive: string,
         
     ) { }
 }

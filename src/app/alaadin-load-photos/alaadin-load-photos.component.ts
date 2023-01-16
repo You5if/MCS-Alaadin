@@ -76,7 +76,7 @@ export class AlaadinLoadPhotosComponent implements OnInit {
     var zip = new JSZip();
     
     for (let i = 0; i < urls.length; i++) {
-      this.http.get(urls[i].profileAPIImagePath, { responseType: "arraybuffer" })
+      this.http.get(urls[i].profileAPIImagePath, { responseType: "blob" })
       .subscribe((x) => {
         console.log("x", x);
         

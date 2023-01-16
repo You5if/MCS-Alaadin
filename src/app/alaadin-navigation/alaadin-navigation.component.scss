@@ -256,6 +256,7 @@
     padding: 2.5px 5px;
     font-style: Arial, Verdana, tahoma !important;
     margin-bottom: 5px;
+    margin-right: 10px;
   }
 
   .closeMessageSec {
@@ -392,6 +393,7 @@
   font-style: Arial, Verdana, tahoma !important;
   margin: 0;
   text-align: center;
+font-weight: bold !important;
   
 }
 
@@ -416,25 +418,39 @@
   font-size: 12px !important;
   font-style: Arial, Verdana, tahoma !important;
   }
-  .warehouses a{
+  .warehouses > div > a{
   display:block;
   padding:1px 5px;
   font-size: 12px !important;
   font-style: Arial, Verdana, tahoma !important;
+  color:#3f51b5;
   }
-  .warehouses a span{
+  .warehouses > div > a > span{
     font-size: 12px !important;
     font-style: Arial, Verdana, tahoma !important;
-  font-weight:bold;
+  font-weight:bold !important;
   color:#555;
   margin-left:4px;
   }
-  .warehouses a:hover{
-  text-decoration:underline;
+  .activeL > span{
+    font-size: 12px !important;
+    font-style: Arial, Verdana, tahoma !important;
+  font-weight:bold !important;
+  color:#fff !important;
+  margin-left:4px;
   }
-  .warehouses a.active{
+  .warehouses > div a:hover{
+  text-decoration:underline;
+  color:#3f51b5;
+  cursor: pointer;
+  }
+  .activeL{
   background:#3f51b5;
-  color:#fff;
+  color:#fff !important;
+  font-size: 12px !important;
+  font-style: Arial, Verdana, tahoma !important;
+  }
+  .notActiveL{
   font-size: 12px !important;
   font-style: Arial, Verdana, tahoma !important;
   }

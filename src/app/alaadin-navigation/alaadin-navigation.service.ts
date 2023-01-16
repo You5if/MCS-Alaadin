@@ -40,9 +40,9 @@ export class AlaadinNavigationService {
       }), catchError(this._cf.handleError)
       );
      }
-    getLoadPlanPics(id: number): Observable<any> {
-      return this.httpClient.get<any>(this._globals.baseAPIUrl  + 'LoadPic/GetEntryByPlanId/' + id).pipe(
-      map((result: any) => {
+    getLoadPlanPics(id: number): Observable<any[]> {
+      return this.httpClient.get<any[]>(this._globals.baseAPIUrl  + 'LoadPic/GetEntryByPlanId/' + id).pipe(
+      map((result: any[]) => {
       return result;
       }), catchError(this._cf.handleError)
       );

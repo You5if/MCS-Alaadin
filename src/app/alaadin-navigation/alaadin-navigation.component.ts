@@ -127,6 +127,31 @@ loadsForExcel: any[] = []
       this._ui.loadingStateChanged.next(false);
       console.log(result)
       this.loadPlan = result
+      for (let i = 0; i < this.loadPlan.length; i++) {
+        this.service.getLoadPlanPics(this.loadPlan[i].loadPlanId).subscribe((result2) => {
+          console.log(result2);
+          
+          // this._ui.loadingStateChanged.next(false);
+          
+          // this.loadPlan[i].firstPic = result2[1]
+          if (result2 === []) {
+            this.loadPlan[i].showImage = false
+            this.loadPlan[i].picsArrayLength = 0
+            // this.loadPlan[i].firstPic.profileAPIImagePath = ''
+            
+          }else {
+            this.loadPlan[i].showImage = true
+            this.loadPlan[i].picsArray = result2
+            this.loadPlan[i].firstPic = result2[0]
+            this.loadPlan[i].picsArrayLength = result2.length
+            console.log(this.loadPlan[i]);
+            
+          }
+
+          console.log(this.loadPlan);
+          
+        })
+      }
       this.service.getWarehouses(Number(this._auth.getUserId())).subscribe((result3) => {
         this.warehousesResponse = result3
         this.warehousesResponse.map((index)=>{
@@ -165,6 +190,7 @@ loadsForExcel: any[] = []
               loaded: index.loaded,
               newCount: index.newCount,
               terminal: index.terminal,
+              warehouseActive: ''
             })
             console.log("see warehouse1:", this.warehousesIds);
           }else if (this.warehousesIds.includes(index.sysWarehouseId)){
@@ -191,6 +217,63 @@ loadsForExcel: any[] = []
             console.log('warehouses:', this.warehouses);
         })
       })
+     
+    })
+    // this._ui.loadingStateChanged.next(true);
+    // this.service.getLoadPlan(Number(this._auth.getUserId())).subscribe((result) => {
+    //   this._ui.loadingStateChanged.next(false);
+    //   this.loadPlan = result
+    //   for (let i = 0; i < this.loadPlan.length; i++) {
+    //     this.service.getLoadPlanPics(this.loadPlan[i].loadPlanId).subscribe((result2) => {
+    //       this._ui.loadingStateChanged.next(false);
+    //       this.loadPlan[i].picsArray = result2
+    //       this.loadPlan[i].firstPic = result2[1]
+
+    //       console.log(this.loadPlan);
+          
+    //     })
+    //   }
+    //   // this.loadPlan.push(this.testLoad)
+    // })
+  }
+
+  onFilterWarehouse(warehouseId: number, typeId: number, activeWarehouse: string) {
+    for (let j = 0; j < this.warehouses.length; j++) {
+      if (this.warehouses[j].sysWarehouseId === warehouseId) {
+        this.warehouses[j].warehouseActive = activeWarehouse
+        console.log(this.warehouses);
+        
+      }else {
+        this.warehouses[j].warehouseActive = ''
+      }
+    }
+    this.loadPlan = []
+    var tempLoad: any[] = []
+    this._ui.loadingStateChanged.next(true);
+    this._cf.newGetPageData(this.pTableName, this.pageData).subscribe((result) => {
+      this._ui.loadingStateChanged.next(false);
+      console.log(result)
+      tempLoad = result
+      if (typeId != 1111) {
+        tempLoad.forEach((load)=> {
+          if (load.sysWarehouseId === warehouseId) {
+            if (load.planStatus === typeId) {
+              this.loadPlan.push(load)
+              console.log(this.loadPlan);
+            }
+          }
+        })
+      }else if (typeId === 1111) {
+        tempLoad.forEach((load)=> {
+          if (load.sysWarehouseId === warehouseId) {
+            // if (load.planStatus === typeId) {
+              this.loadPlan.push(load)
+              console.log(this.loadPlan);
+              
+            // }
+          }
+        })
+      }
       for (let i = 0; i < this.loadPlan.length; i++) {
         this.service.getLoadPlanPics(this.loadPlan[i].loadPlanId).subscribe((result2) => {
           // this._ui.loadingStateChanged.next(false);
@@ -213,22 +296,46 @@ loadsForExcel: any[] = []
         })
       }
     })
-    // this._ui.loadingStateChanged.next(true);
-    // this.service.getLoadPlan(Number(this._auth.getUserId())).subscribe((result) => {
-    //   this._ui.loadingStateChanged.next(false);
-    //   this.loadPlan = result
-    //   for (let i = 0; i < this.loadPlan.length; i++) {
-    //     this.service.getLoadPlanPics(this.loadPlan[i].loadPlanId).subscribe((result2) => {
-    //       this._ui.loadingStateChanged.next(false);
-    //       this.loadPlan[i].picsArray = result2
-    //       this.loadPlan[i].firstPic = result2[1]
-
-    //       console.log(this.loadPlan);
+  }
+  clearFilters() {
+    for (let j = 0; j < this.warehouses.length; j++) {
+      
+        this.warehouses[j].warehouseActive = ''
+      
+    }
+    this.loadPlan = []
+    this._ui.loadingStateChanged.next(true);
+    this._cf.newGetPageData(this.pTableName, this.pageData).subscribe((result) => {
+      this._ui.loadingStateChanged.next(false);
+      console.log(result)
+      this.loadPlan = result
+      
+      for (let i = 0; i < this.loadPlan.length; i++) {
+        this.service.getLoadPlanPics(this.loadPlan[i].loadPlanId).subscribe((result2) => {
+          // this._ui.loadingStateChanged.next(false);
           
-    //     })
-    //   }
-    //   // this.loadPlan.push(this.testLoad)
-    // })
+          // this.loadPlan[i].firstPic = result2[1]
+          if (result2 === []) {
+            this.loadPlan[i].showImage = false
+            this.loadPlan[i].picsArrayLength = 0
+            // this.loadPlan[i].firstPic.profileAPIImagePath = ''
+            console.log('noto');
+            
+            
+          }else {
+            this.loadPlan[i].showImage = true
+            this.loadPlan[i].picsArray = result2
+            this.loadPlan[i].firstPic.profileAPIImagePath = result2[1].profileAPIImagePath
+            this.loadPlan[i].picsArrayLength = result2.length
+            console.log(this.loadPlan[i]);
+            
+          }
+
+          console.log(this.loadPlan);
+          
+        })
+      }
+    })
   }
 
   generateExcel() {

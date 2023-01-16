@@ -74,13 +74,13 @@ Thank you!
      
        <div class="wareDiv">
         <div class="warehouses">
-            <div *ngFor="let warehouse of warehouses" class="inactive">
+            <div *ngFor="let warehouse of warehouses" >
                 <h4 class="labelFonts">{{ warehouse.warehouse }}</h4>
-                <a >All <span>{{warehouse.all}}</span></a>
-                <a >At the Terminal <span>{{warehouse.terminal}}</span></a>
-                <a >Dispached <span>{{warehouse.dispatched}}</span></a>
-                <a >New <span>{{warehouse.newCount}}</span></a>
-                <a >Loaded <span>{{warehouse.loaded}}</span></a>
+                <a class="{{warehouse.warehouseActive === 'all' ? 'activeL' : 'notActiveL'}}" (click)="onFilterWarehouse(warehouse.sysWarehouseId, 1111, 'all')" >All <span>{{warehouse.all}}</span></a>
+                <a class="{{warehouse.warehouseActive === 'terminal' ? 'activeL' : 'notActiveL'}}" (click)="onFilterWarehouse(warehouse.sysWarehouseId, 32005, 'terminal')">At the Terminal <span>{{warehouse.terminal}}</span></a>
+                <a class="{{warehouse.warehouseActive === 'dispatched' ? 'activeL' : 'notActiveL'}}" (click)="onFilterWarehouse(warehouse.sysWarehouseId, 32002, 'dispatched')">Dispached <span>{{warehouse.dispatched}}</span></a>
+                <a class="{{warehouse.warehouseActive === 'new' ? 'activeL' : 'notActiveL'}}" (click)="onFilterWarehouse(warehouse.sysWarehouseId, 32004, 'new')">New <span>{{warehouse.newCount}}</span></a>
+                <a class="{{warehouse.warehouseActive === 'loaded' ? 'activeL' : 'notActiveL'}}" (click)="onFilterWarehouse(warehouse.sysWarehouseId, 32001, 'loaded')">Loaded <span>{{warehouse.loaded}}</span></a>
             </div>
             
             <!-- <div>
@@ -102,6 +102,7 @@ Thank you!
             </div> -->
         </div>
            <div class="alaTable">
+            <button class="passwordText2" (click)="clearFilters()">Clear filters</button>
             <button class="passwordText2" (click)="generateExcel()">Download to excel</button>
                 <table class="autos">
                     <tbody>
@@ -137,7 +138,7 @@ Thank you!
                             <tr class="loads" *ngFor="let load of loadPlan">
                                 <td class="loadsLink">{{load.loadPlanId}}</td>
                                 <td ><div (click)="openPics(load)" class="loadsPic">
-                                    <img   src="{{load.showImage ? load.firstPic.profileAPIImagePath : ''}}" width="57" height="40" alt=""> {{load.picsArrayLength}}
+                                    <img   src="{{load.showImage === true ? load.firstPic.profileAPIImagePath : ''}}" width="57" height="40" alt=""> {{load.picsArrayLength}}
                                 </div></td>
                                 <td class="loadsLink" (click)="openPics(load)">{{load.loadDate | date}}</td>
                                 <td class="loadsLink" (click)="openPics(load)">{{load.model}}</td>
