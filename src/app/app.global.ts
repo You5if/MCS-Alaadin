@@ -27,9 +27,15 @@ export class AppGlobals {
   //   readonly baseAPIRootUrl: string = 'https://localhost:44377/api/';
 
   /* Development Server */
+<<<<<<< HEAD
   readonly baseAPIFileUrl: string = "http://49.50.77.201/aladdinshippingnewapi/";
   readonly baseAPIUrl: string = "http://49.50.77.201/aladdinshippingnewapi/api/";
   readonly baseAPIRootUrl: string = "http://49.50.77.201/aladdinshippingnewapi/api/";
+=======
+  readonly baseAPIFileUrl: string = "https://49.50.77.201/aladdinshippingnewapi/";
+  readonly baseAPIUrl: string = "https://49.50.77.201/aladdinshippingnewapi/api/";
+  readonly baseAPIRootUrl: string = "https://49.50.77.201/aladdinshippingnewapi/api/";
+>>>>>>> 4f1bfbb1093017e512ed24c5d4ec4d7e2bdf8fdb
   // readonly baseAPIFileUrl: string = "https://newapi.aladdinshipping.com/";
   // readonly baseAPIUrl: string = "https://newapi.aladdinshipping.com/api/";
   // readonly baseAPIRootUrl: string = "https://newapi.aladdinshipping.com/api/";
