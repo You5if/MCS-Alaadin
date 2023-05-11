@@ -1,3 +1,4 @@
+import { Direction } from '@angular/cdk/bidi';
 import { DatePipe } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
@@ -21,6 +22,8 @@ export class AlaadinNavigationComponent implements OnInit {
 
 
   loadPlan: any[] = []
+  direction: Direction = "ltr";
+  lang_LS: string = "16001";
   warehousesResponse: any[] = []
   warehousesIds: number[] = []
   warehouses: WarehouseDetModel[] = []
@@ -104,6 +107,7 @@ loadsForExcel: any[] = []
   }
 
   ngOnInit(): void {
+    localStorage.setItem(this._globals.baseAppName + '_language', this.lang_LS);
     // if(this._auth.getRole() === "2") {
     //   this.router.navigate(['/System']);
     // }

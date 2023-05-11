@@ -31,7 +31,7 @@ import { MatPaginator, PageEvent } from '@angular/material/paginator';
 export class LoadPlanComponent implements OnInit {
 
     displayedColumns: string[] =
-        ['select','loadPlanId'];
+        ['compName','vin', 'loadPlanStatus'];
 
         idS! : number;
   direction!: Direction;
@@ -51,6 +51,9 @@ export class LoadPlanComponent implements OnInit {
 
     selection = new SelectionModel<LoadPlanModel>(true, []);
     loadPlanId!: string;
+  vin!: string;
+  compName!: string;
+  loadPlanStatus!: string;
 ;
     
     model!: Send;
@@ -111,7 +114,11 @@ export class LoadPlanComponent implements OnInit {
     if(localStorage.getItem(this._globals.baseAppName + '_language') == "16001") {
       this.direction = "ltr"
       this.header = "Load plan"
-      this.loadPlanId = "load plan"
+      this.vin = "Vin"
+      
+      this.compName = "Company"
+      
+      this.loadPlanStatus = "Status"
       
       
       this.edit = "Edit"
@@ -120,7 +127,11 @@ export class LoadPlanComponent implements OnInit {
     }else if(localStorage.getItem(this._globals.baseAppName + '_language') == "16002") {
       this.direction = "rtl"
       this.header = "خطة التحميل"
-      this.loadPlanId = "خطة التحميل"
+      this.vin = "Vin"
+      
+      this.compName = "الشركة"
+      
+      this.loadPlanStatus = "الحالة"
      
       this.edit = "تعديل"
       this.submit = "ارسال"

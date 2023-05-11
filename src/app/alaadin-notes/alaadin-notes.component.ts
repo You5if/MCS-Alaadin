@@ -141,15 +141,15 @@ export class AlaadinNotesComponent implements OnInit {
           ? 1
           : 1;
   
-        for(let k=0;k<=this.dropList.length;k++) {
-          this.dropItem = this.dropList[k]
+      //   for(let k=0;k<=this.dropList.length;k++) {
+      //     this.dropItem = this.dropList[k]
   
-          this._select.getDropdown(this.dropItem.refId, this.dropItem.refTable, this.dropItem.refColumn, this.dropItem.refCondition, false).subscribe((res: SelectModel[]) => {
-          this.dropList[k].myarray = res;
-          this.container.push(res);
-      });
+      //     this._select.getDropdown(this.dropItem.refId, this.dropItem.refTable, this.dropItem.refColumn, this.dropItem.refCondition, false).subscribe((res: SelectModel[]) => {
+      //     this.dropList[k].myarray = res;
+      //     this.container.push(res);
+      // });
   
-        }  
+      //   }  
       })
   }
 

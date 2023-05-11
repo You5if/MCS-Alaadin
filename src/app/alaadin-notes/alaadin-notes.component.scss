@@ -12,10 +12,24 @@
   width: 300px;
 }
 
+.imgSize {
+  width: 50%;
+}
+
 .Main {
   width: 100%;
   padding: 0;
   height: 100%;
+  // overflow: hidden;
+  // overflow-y: scroll;
+}
+.Main::-webkit-scrollbar {
+  width: 3px;
+}
+.Main::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+
+  background-color: #e9e9e9;
 }
 .cancel_Img {
   width: 14px;
@@ -46,7 +60,7 @@
   margin-right: 10px;
   width: 100px;
   color: white;
-  background: #3f51b5;
+  background: #20bf6b;
 }
 .BtnC {
   outline: none;
@@ -139,7 +153,21 @@ label {
     padding: 0 0 0 20px;
     height: 100%;
   }
-  
+  .Main {
+    width: 100%;
+    padding: 0;
+    height: 320px;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+  .Main::-webkit-scrollbar {
+    width: 3px;
+  }
+  .Main::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+
+    background-color: #e9e9e9;
+  }
 }
 @media (max-width: 435px) {
   .section {
@@ -155,7 +183,21 @@ label {
     padding: 0 0 0 20px;
     height: 100%;
   }
-  
+  .Main {
+    width: 100%;
+    padding: 0;
+    height: 320px;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+  .Main::-webkit-scrollbar {
+    width: 3px;
+  }
+  .Main::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+
+    background-color: #e9e9e9;
+  }
 }
 
 // @media (max-width: 960px) {

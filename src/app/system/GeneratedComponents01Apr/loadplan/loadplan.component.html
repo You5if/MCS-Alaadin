@@ -61,7 +61,11 @@
   
     </ng-container>
   
-    <ng-container matColumnDef="loadPlanId">      <mat-header-cell class="centH" *matHeaderCellDef>{{loadPlanId}}</mat-header-cell>     <mat-cell mat-cell class="cent" *matCellDef="let row">{{row.description}}</mat-cell>
+    <ng-container matColumnDef="compName">      <mat-header-cell class="centH" *matHeaderCellDef>{{compName}}</mat-header-cell>     <mat-cell mat-cell class="cent" *matCellDef="let row">{{row.compName}}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="vin">      <mat-header-cell class="centH" *matHeaderCellDef>{{vin}}</mat-header-cell>     <mat-cell mat-cell class="cent" *matCellDef="let row">{{row.vin}}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="loadPlanStatus">      <mat-header-cell class="centH" *matHeaderCellDef>{{loadPlanStatus}}</mat-header-cell>     <mat-cell mat-cell class="cent" *matCellDef="let row">{{row.loadPlanStatusName}}</mat-cell>
     </ng-container>
 
    
@@ -112,9 +116,21 @@
     <mat-card fxLayout class="card">
       <div >
         <div fxLayoutGap="5px" class="index_row">
-          <h3>{{loadPlanId}}</h3>
+          <h3>{{vin}}</h3>
           <h3>:</h3>
-          <h3>{{ index.description }}</h3>
+          <h3>{{ index.vin }}</h3>
+        </div>
+       
+        <div fxLayoutGap="5px" class="index_row">
+          <h3>{{vin}}</h3>
+          <h3>:</h3>
+          <h3>{{ index.vin }}</h3>
+        </div>
+       
+        <div fxLayoutGap="5px" class="index_row">
+          <h3>{{loadPlanStatus}}</h3>
+          <h3>:</h3>
+          <h3>{{ index.loadPlanStatusName }}</h3>
         </div>
        
       </div>
